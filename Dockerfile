@@ -8,7 +8,7 @@ RUN apt-get install gnupg -y
 
 RUN apt-get install wget -y
 
-RUN apt-get install rsync
+RUN apt-get install rsync -y
 
 RUN apt-get update && apt-get install ca-certificates apt-transport-https -y
 
