@@ -29,6 +29,5 @@ RUN apt-get update && apt-get install unifi -y
 # Cleanup
 RUN rm -rf /tmp/*
 
-CMD /etc/init.d/unifi start
-
+ENTRYPOINT service unifi start && /bin/bash
 
