@@ -23,7 +23,7 @@ docker run -d \
 # In order to make the data persistant you will need to migrate it over to the mapped volume
 # The following can be done using docker exec from host or interactivly in the container
 # Stop Unifi server
-servce unifi stop
+service unifi stop
 # Migrate data over to mapped volume
 rsync -avzh /var/lib/unifi/ /config/unifi
 # Delete original location
