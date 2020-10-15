@@ -12,9 +12,7 @@ docker run -d \
   -p 5514:5514 \
   --privileged \
   --restart unless-stopped \
+  -v /home/paul/Docker/Unifi/config:/config \
   woodster1975/unifi
-  
-  
-  # Removed whilst testing
-  # -v /home/paul/Docker/Unifi/config:/config \
+ 
   
