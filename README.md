@@ -5,7 +5,7 @@ servce unifi stop
 # Migrate data over to mapped volume
 rsync -avzh /var/lib/unifi/ /config/unifi
 # Delete original location
-rm -s -f /var/lib/unifi
+rm -r -f /var/lib/unifi
 # Symlink the mapped volume data back to the original location
 ln -s /config/unifi /var/lib/unifi
 # Restart Unifi server
