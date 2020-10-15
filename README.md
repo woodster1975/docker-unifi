@@ -6,7 +6,7 @@ servce unifi stop
 rsync -avzh /var/lib/unifi/ /config/unifi
 # Delete original location
 rd -s -f /var/lib/unifi
-# Symlink the mapped olume data back to the original location
+# Symlink the mapped volume data back to the original location
 ln -s /config/unifi /var/lib/unifi
 # Restart Unifi server
 service unifi start
